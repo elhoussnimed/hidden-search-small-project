@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.container {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.container .input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    transition: .5s all ease;
+    position: relative;
+    right: 0;
+    z-index: 1;
+}
+
+.input.hide {
+    right: -80%;
+}
+
+.container i {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdbdbd;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
